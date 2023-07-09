@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-	 <head>
+ <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230709205527">
 	<title>Главная</title>
 </head>
-	<body>
-		<header class="header">
+
+<body>
+	<header class="header">
    <div class="header__top">
       <div class="header__top-container">
          <div class="header__top-tel">
@@ -138,9 +139,38 @@
       </div>
    </div>
 </header>
-		<main>
-		</main>
-		<footer></footer>
-		<script src="js/app.min.js"></script>
-	</body>
+	<main class="main">
+		<section class="banner">
+			<div class="banner__box">
+				<picture class="banner__box-image">
+					<source type="image/webp" srcset="img//main/banner/banner.webp">
+					<source type="image/png" srcset="img//main/banner/banner.png">
+					<img src="img/main/banner/banner.webp" alt="Garden" title="Garden" loading="lazy">
+				</picture>
+
+				<video class="banner__box-video" controls>
+					<source src="./files/video/video.mp4" type="video/mp4">
+					<source src="./files/video/video.webm" type="video/webm">
+				</video>
+				<div class="banner__box-close">
+					<img src="img/svgicons/close-button.svg" alt="close-button" title="close-button">
+				</div>
+			</div>
+			<div class="banner__container">
+				<div class="banner__content">
+					<h1 class="banner__content-title">Орех Причерноморья</h1>
+					<p class="banner__content-text">
+						Единственный в Украине сад совместного
+						выращивание фундука и грецкого ореха
+					</p>
+
+					<button class="banner__content-play"></button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer></footer>
+	<script src="js/app.min.js?_v=20230709205527"></script>
+</body>
+
 </html>
