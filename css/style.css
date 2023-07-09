@@ -1052,7 +1052,8 @@ body {
     align-items: center;
     background: #fafafa;
     height: 42px;
-    margin: 15px;
+    margin: 15px 0;
+    padding: 15px;
   }
   .header__menu-box {
     position: fixed;
@@ -1064,7 +1065,6 @@ body {
     padding: 15px 0px 30px 0px;
     transition: top 0.3s ease 0s;
     overflow: auto;
-    opacity: 0.98;
   }
   .header__menu-box._active {
     top: 0;
