@@ -970,25 +970,25 @@ h6 {
 }
 
 @media (max-width: 1440px) and (max-width: 20em) {
-  .header .header-top__container,
-  .header .header-bottom__container,
-  .header .header-menu__container {
+  .header-top__container,
+  .header-bottom__container,
+  .header-menu__container {
     padding-left: 0.9375rem;
   }
 
-  .header .header-top__container,
-  .header .header-bottom__container,
-  .header .header-menu__container {
+  .header-top__container,
+  .header-bottom__container,
+  .header-menu__container {
     padding-right: 0.9375rem;
   }
 }
 
 @media (max-width: 1024px) {
-  .header .header-top__container {
+  .header-top__container {
     padding-top: 0px;
   }
 
-  .header .header-top__tel {
+  .header-top__tel {
     display: block;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -998,24 +998,24 @@ h6 {
             align-items: center;
   }
 
-  .header .header-top__tel a {
+  .header-top__tel a {
     color: #000;
     font-size: 12px;
     font-weight: 600;
     line-height: normal;
   }
 
-  .header .header-top__tel a span {
+  .header-top__tel a span {
     color: #337d5a;
   }
 
-  .header .header-top__tel a img {
+  .header-top__tel a img {
     width: 10px;
     height: 10px;
     margin: 2px 6px 0 0;
   }
 
-  .header .header-top__tel button {
+  .header-top__tel button {
     margin-left: 25px;
     position: relative;
     color: #337d5a;
@@ -1028,7 +1028,7 @@ h6 {
     background: transparent;
   }
 
-  .header .header-top__tel button::after {
+  .header-top__tel button::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -1048,7 +1048,7 @@ h6 {
     background-color: #93b474;
   }
 
-  .header .header-top__tel button:hover::after {
+  .header-top__tel button:hover::after {
     -webkit-transform-origin: bottom left;
         -ms-transform-origin: bottom left;
             transform-origin: bottom left;
@@ -1057,24 +1057,24 @@ h6 {
             transform: scaleX(1);
   }
 
-  .header .header-top__social {
+  .header-top__social {
     display: none;
   }
 
-  .header .header-top__item {
+  .header-top__item {
     max-width: 54px;
     width: 100%;
   }
 
-  .header .header-top__discount {
+  .header-top__discount {
     display: none;
   }
 
-  .header .header-top__account {
+  .header-top__account {
     display: none;
   }
 
-  .header .header-top__lang {
+  .header-top__lang {
     max-width: 54px;
     width: 100%;
     height: 38px;
@@ -1091,47 +1091,47 @@ h6 {
     margin: 0;
   }
 
-  .header .header-top__lang-select {
+  .header-top__lang-select {
     width: 100%;
     padding-left: 15px;
   }
 
-  .header .header-top__lang-list {
+  .header-top__lang-list {
     text-align: center;
     min-width: 54px;
     width: 100%;
   }
 
-  .header .header-top__lang-list.show {
+  .header-top__lang-list.show {
     text-align: center;
     min-width: 54px;
     width: 100%;
   }
 
-  .header .header-top__lang-item {
+  .header-top__lang-item {
     padding: 5px 0;
   }
 
-  .header .header-top__lang-arrow {
+  .header-top__lang-arrow {
     position: absolute;
     right: 8px;
     top: 6px;
   }
 
-  .header .header-bottom {
+  .header-bottom {
     height: 80px;
   }
 
-  .header .header-bottom__menubtn {
+  .header-bottom__menubtn {
     display: block;
     cursor: pointer;
   }
 
-  .header .header-bottom__logo {
+  .header-bottom__logo {
     margin: 0;
   }
 
-  .header .header-bottom__item {
+  .header-bottom__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1142,34 +1142,34 @@ h6 {
     width: 100%;
   }
 
-  .header .header-bottom__item-social {
+  .header-bottom__item-social {
     display: none;
   }
 
-  .header .header-bottom__item-tel {
+  .header-bottom__item-tel {
     display: none;
   }
 
-  .header .header-bottom__item-call {
+  .header-bottom__item-call {
     display: none;
   }
 
-  .header .header-bottom__item-basket {
+  .header-bottom__item-basket {
     margin: 0;
   }
 
-  .header .header-menu {
+  .header-menu {
     height: 0;
     position: relative;
     margin: 0;
   }
 
-  .header .header-menu__logo {
+  .header-menu__logo {
     display: block;
     margin: 0 15px;
   }
 
-  .header .header-menu__close-btn {
+  .header-menu__close-btn {
     display: block;
     position: absolute;
     top: 15px;
@@ -1178,7 +1178,7 @@ h6 {
     cursor: pointer;
   }
 
-  .header .header-menu__subrow {
+  .header-menu__subrow {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1194,7 +1194,7 @@ h6 {
     padding: 15px;
   }
 
-  .header .header-menu__box {
+  .header-menu__box {
     position: fixed;
     top: -100%;
     left: 0%;
@@ -1207,29 +1207,29 @@ h6 {
     overflow: auto;
   }
 
-  .header .header-menu__box._active {
+  .header-menu__box._active {
     top: 0;
   }
 
-  .header .header-menu__list {
+  .header-menu__list {
     display: block;
     padding: 0 15px;
   }
 
-  .header .header-menu__item {
+  .header-menu__item {
     margin-bottom: 13px;
     padding-bottom: 13px;
     width: 100%;
   }
 
-  .header .logo {
+  .logo {
     margin-top: 11px;
     max-width: 135px;
     width: 100%;
     height: 60px;
   }
 
-  .header .logo a {
+  .logo a {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1240,7 +1240,7 @@ h6 {
     margin: 0 auto;
   }
 
-  .header .logo img {
+  .logo img {
     width: 29px;
     height: 29px;
     margin: 0 0 7px 0;
@@ -1262,6 +1262,18 @@ h6 {
 
   .header-menu__list {
     padding-right: 0.9375rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-top__tel a img {
+    width: 10px;
+    height: 10px;
+    margin: 2px 0px 0 0;
+  }
+
+  .header-top button {
+    margin-left: 5px;
   }
 }
 
@@ -1324,32 +1336,32 @@ h6 {
 }
 
 @media (max-width: 1440px) and (min-width: 120em) {
-  .header .header-top__container,
-  .header .header-bottom__container,
-  .header .header-menu__container {
+  .header-top__container,
+  .header-bottom__container,
+  .header-menu__container {
     padding-left: 0.9375rem;
   }
 
-  .header .header-top__container,
-  .header .header-bottom__container,
-  .header .header-menu__container {
+  .header-top__container,
+  .header-bottom__container,
+  .header-menu__container {
     padding-right: 0.9375rem;
   }
 }
 
 @media (max-width: 1440px) and (min-width: 20em) and (max-width: 120em) {
 @supports (padding-left: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem )) {
-    .header .header-top__container,
-    .header .header-bottom__container,
-    .header .header-menu__container {
+    .header-top__container,
+    .header-bottom__container,
+    .header-menu__container {
       padding-left: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem );
     }
 }
 
 @supports not (padding-left: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem )) {
-    .header .header-top__container,
-    .header .header-bottom__container,
-    .header .header-menu__container {
+    .header-top__container,
+    .header-bottom__container,
+    .header-menu__container {
       padding-left: calc(
 				0.9375rem + 0 * (100vw - 20rem) / 100
 			);
@@ -1357,17 +1369,17 @@ h6 {
 }
 
 @supports (padding-right: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem )) {
-    .header .header-top__container,
-    .header .header-bottom__container,
-    .header .header-menu__container {
+    .header-top__container,
+    .header-bottom__container,
+    .header-menu__container {
       padding-right: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem );
     }
 }
 
 @supports not (padding-right: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem )) {
-    .header .header-top__container,
-    .header .header-bottom__container,
-    .header .header-menu__container {
+    .header-top__container,
+    .header-bottom__container,
+    .header-menu__container {
       padding-right: calc(
 				0.9375rem + 0 * (100vw - 20rem) / 100
 			);
@@ -1376,32 +1388,32 @@ h6 {
 }
 
 @media (min-width: 320px) and (max-width: 374.98px) and (min-width: 120em) {
-  .header .header-top__container,
-  .header .header-bottom__container,
-  .header .header-menu__container {
+  .header-top__container,
+  .header-bottom__container,
+  .header-menu__container {
     padding-left: 0.3125rem;
   }
 
-  .header .header-top__container,
-  .header .header-bottom__container,
-  .header .header-menu__container {
+  .header-top__container,
+  .header-bottom__container,
+  .header-menu__container {
     padding-right: 0.3125rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 374.98px) and (min-width: 20em) and (max-width: 120em) {
 @supports (padding-left: clamp( 0.3125rem , 0.6875rem  +  -0.3125vw , 0.625rem )) {
-    .header .header-top__container,
-    .header .header-bottom__container,
-    .header .header-menu__container {
+    .header-top__container,
+    .header-bottom__container,
+    .header-menu__container {
       padding-left: clamp( 0.3125rem , 0.6875rem  +  -0.3125vw , 0.625rem );
     }
 }
 
 @supports not (padding-left: clamp( 0.3125rem , 0.6875rem  +  -0.3125vw , 0.625rem )) {
-    .header .header-top__container,
-    .header .header-bottom__container,
-    .header .header-menu__container {
+    .header-top__container,
+    .header-bottom__container,
+    .header-menu__container {
       padding-left: calc(
 				0.625rem + -0.3125 * (100vw - 20rem) / 100
 			);
@@ -1409,17 +1421,17 @@ h6 {
 }
 
 @supports (padding-right: clamp( 0.3125rem , 0.6875rem  +  -0.3125vw , 0.625rem )) {
-    .header .header-top__container,
-    .header .header-bottom__container,
-    .header .header-menu__container {
+    .header-top__container,
+    .header-bottom__container,
+    .header-menu__container {
       padding-right: clamp( 0.3125rem , 0.6875rem  +  -0.3125vw , 0.625rem );
     }
 }
 
 @supports not (padding-right: clamp( 0.3125rem , 0.6875rem  +  -0.3125vw , 0.625rem )) {
-    .header .header-top__container,
-    .header .header-bottom__container,
-    .header .header-menu__container {
+    .header-top__container,
+    .header-bottom__container,
+    .header-menu__container {
       padding-right: calc(
 				0.625rem + -0.3125 * (100vw - 20rem) / 100
 			);
@@ -1428,31 +1440,15 @@ h6 {
 }
 
 @media (min-width: 320px) and (max-width: 374.98px) and (max-width: 20em) {
-  .header .header-top__container,
-  .header .header-bottom__container,
-  .header .header-menu__container {
+  .header-top__container,
+  .header-bottom__container,
+  .header-menu__container {
     padding-left: 0.625rem;
   }
 
-  .header .header-top__container,
-  .header .header-bottom__container,
-  .header .header-menu__container {
+  .header-top__container,
+  .header-bottom__container,
+  .header-menu__container {
     padding-right: 0.625rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 374.98px) {
-  .header .header-top__container {
-    padding-top: 0px;
-  }
-
-  .header .header-top__tel a img {
-    width: 10px;
-    height: 10px;
-    margin: 2px 0px 0 0;
-  }
-
-  .header .header-top button {
-    margin-left: 5px;
   }
 }
