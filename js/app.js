@@ -37,6 +37,39 @@
         menuBody.classList.toggle("_active");
         menuCloseBtn.classList.toggle("_active");
     }));
+    new Swiper(".slide__swiper", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".slide__next",
+            prevEl: ".slide__prev"
+        }
+    });
+    new Swiper(".second-slide__swiper", {
+        navigation: {
+            nextEl: ".slide__next",
+            prevEl: ".slide__prev"
+        }
+    });
+    new Swiper(".news__swiper", {
+        spaceBetween: 32,
+        slidesPerView: 3,
+        navigation: {
+            nextEl: ".news__next",
+            prevEl: ".news__prev"
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: "auto"
+            },
+            768: {
+                slidesPerView: "auto"
+            },
+            1024: {
+                slidesPerView: "auto"
+            }
+        }
+    });
     window["FLS"] = true;
     isWebp();
 })();
