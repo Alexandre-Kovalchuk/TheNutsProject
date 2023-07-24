@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: Lato;
   font-display: swap;
@@ -300,6 +302,12 @@ body {
   margin: 0 auto;
 }
 
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -423,6 +431,59 @@ body {
 }
 
 .inp-email::placeholder {
+  color: #1a2f3f;
+  color: #1a2f3f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+.inp {
+  max-width: 474px;
+  width: 100%;
+  height: 47px;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  padding: 0px 0 0 16px;
+}
+
+.inp::-webkit-input-placeholder {
+  color: #1a2f3f;
+  color: #1a2f3f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+.inp::-moz-placeholder {
+  color: #1a2f3f;
+  color: #1a2f3f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+.inp:-ms-input-placeholder {
+  color: #1a2f3f;
+  color: #1a2f3f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+.inp::-ms-input-placeholder {
+  color: #1a2f3f;
+  color: #1a2f3f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+.inp::placeholder {
   color: #1a2f3f;
   color: #1a2f3f;
   font-size: 14px;
@@ -1211,6 +1272,515 @@ body {
   background: #fbfbfb;
 }
 
+.signup-register {
+  margin-top: 179px;
+}
+
+.signup-register__container {
+  padding-left: 17px;
+}
+
+.signup-register__nav {
+  padding-top: 36px;
+}
+
+.signup-register__title {
+  font-family: Raleway;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 32px;
+  /* 100% */
+  letter-spacing: 0.32px;
+  margin: 46px 0 19px;
+}
+
+.signup-register__subtitle {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 32px;
+  /* 188.235% */
+  letter-spacing: 0.17px;
+}
+
+.signup-register__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(500px, 474px) minmax(100px, 475px);
+  grid-template-columns: minmax(500px, 474px) minmax(100px, 475px);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 12px;
+  max-width: 1214px;
+  width: 100%;
+}
+
+.signup-register__form-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 32px;
+  max-width: 474px;
+  width: 100%;
+}
+
+.signup-register__form-tabs-btn {
+  position: relative;
+  max-width: 210px;
+  width: 100%;
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.signup-register__form-tabs-btn.btn-active {
+  color: #1a2f3f;
+  font-weight: 700;
+  /* Коли клас title-active додано, використовуйте тут змінені стилі */
+}
+
+.signup-register__form-tabs-btn.btn-active::after {
+  content: "";
+  position: absolute;
+  max-width: 210px;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2.5px;
+  bottom: -14px;
+  left: 0;
+  -webkit-transform-origin: bottom right;
+      -ms-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+  background-color: #337d5a;
+}
+
+.signup-register__form-tabs-btn.btn-active.btn-active::after {
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.signup-register__form-tabs-btn:first-child {
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.signup-register__form-tabs-btn:last-child {
+  padding-right: 33px;
+}
+
+.signup-register__form-line {
+  margin: 13px 0 42px;
+  max-width: 474px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.signup-register__form-info input {
+  margin-bottom: 15px;
+}
+
+.signup-register__form-info input:last-child {
+  margin-bottom: 46px;
+}
+
+.signup-register__form-address input {
+  margin-top: 15px;
+}
+
+.signup-register__form-address input:last-child {
+  margin-bottom: 48px;
+}
+
+.signup-register__form-country,
+.signup-register__form-region {
+  max-width: 474px;
+  width: 100%;
+  height: 47px;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  margin-top: 21px;
+}
+
+.signup-register__form-country:hover,
+.signup-register__form-region:hover {
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  background: rgba(51, 125, 90, 0.1);
+}
+
+.signup-register__form-country-select,
+.signup-register__form-region-select {
+  position: relative;
+  cursor: pointer;
+  color: #1a2f3f;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+.signup-register__form-country-current,
+.signup-register__form-region-current {
+  display: inline-block;
+  padding: 16px 0 12px 16px;
+}
+
+.signup-register__form-country-list,
+.signup-register__form-region-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity 0.5s, visibility 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
+  z-index: 5;
+  background: #fff;
+}
+
+.signup-register__form-country-list.show,
+.signup-register__form-region-list.show {
+  opacity: 1;
+  visibility: visible;
+  max-width: 474px;
+  width: 100%;
+  cursor: pointer;
+  background: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: opacity 0.5s, visibility 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.signup-register__form-country-item,
+.signup-register__form-region-item {
+  padding: 13px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.signup-register__form-country-item:hover,
+.signup-register__form-region-item:hover {
+  color: #fff;
+  background: #337d5a;
+}
+
+.signup-register__form-country-item,
+.signup-register__form-country-current,
+.signup-register__form-region-item,
+.signup-register__form-region-current {
+  color: #1a2f3f;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  width: 100%;
+}
+
+.signup-register__form-country-arrow,
+.signup-register__form-region-arrow {
+  position: absolute;
+  right: 15px;
+  top: 21px;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.signup-register__form-country-arrow img,
+.signup-register__form-region-arrow img {
+  width: 11px;
+  height: 6.14px;
+}
+
+.signup-register__form-country-arrow.rotate,
+.signup-register__form-region-arrow.rotate {
+  top: 15px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.signup-register__form-region {
+  margin-top: 15px;
+}
+
+.signup-register__form-password input {
+  margin-top: 20px;
+}
+
+.signup-register__form-password input:nth-child(3) {
+  margin-top: 15px;
+}
+
+.signup-register__form-password-check {
+  margin-top: 23px;
+}
+
+.signup-register__form-password-link {
+  margin-top: 28px;
+  max-width: 474px;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  border: 0.5px solid #337d5a;
+  background: #337d5a;
+}
+
+.signup-register__form-password-link:active {
+  background: #fff;
+  color: #337d5a;
+}
+
+.signup-register__form-file {
+  margin-top: 34px;
+}
+
+.signup-register__form-file-check {
+  margin-top: 23px;
+}
+
+.signup-register__form-file-label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.signup-register__form-file-label img {
+  max-width: 131px;
+  width: 100%;
+  max-height: 170px;
+  height: 100%;
+}
+
+.signup-register__form-file-label::after {
+  position: absolute;
+  top: 47%;
+  display: block;
+  max-width: 107px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: "Загрузить фото";
+  border-bottom: 1px dashed #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 600px;
+  color: #fff;
+  padding-bottom: 2px;
+}
+
+.signup-register__form-file-inp {
+  display: none;
+}
+
+.signup-register__form-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 17px;
+}
+
+.signup-register__form-legaladdress {
+  margin-top: 47px;
+  margin-left: -1px;
+}
+
+.signup-register__form-legaladdress input {
+  margin-top: 15px;
+}
+
+.signup-register__form-props {
+  margin-top: 48px;
+  margin-left: -1px;
+}
+
+.signup-register__form-props input {
+  margin-top: 22px;
+}
+
+.signup-register__form-fop {
+  margin-top: 48px;
+  margin-left: -2px;
+}
+
+.signup-register__form-fop-props {
+  padding-top: 22px;
+}
+
+.signup-register__form-fop-address {
+  margin-top: 47px;
+}
+
+.signup-register__form-fop-address input {
+  margin-top: 15px;
+}
+
+.signup-contact {
+  margin-top: 90px;
+  margin-bottom: 46px;
+  background: #fbfbfb;
+}
+
+.checkbox-container,
+.rediobox-container {
+  position: relative;
+  padding-left: 22px;
+  padding-top: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  /* 246.154% */
+  letter-spacing: 0.13px;
+}
+
+.rediobox-container {
+  padding-left: 25px;
+  padding-top: 4px;
+  margin-bottom: 8px;
+}
+
+.check-green {
+  font-weight: 600;
+  margin-left: 6px;
+  color: #337d5a;
+}
+
+.check,
+.radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background: #fff;
+  border: 2px solid #337d5a;
+  border-radius: 0;
+  cursor: pointer;
+  /* Додайте курсор pointer для вказівника при наведенні */
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  /* Приховуємо галочку за замовчуванням */
+  left: 3px;
+  top: 0;
+  width: 3px;
+  height: 8px;
+  border: solid #337d5a;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.radiomark {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  border: 2px solid #337d5a;
+  border-radius: 50%;
+  cursor: pointer;
+  /* Додайте курсор pointer для вказівника при наведенні */
+}
+
+.radiomark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 2px;
+  top: 2px;
+  width: 7px;
+  height: 7px;
+  background: #337d5a;
+  border-radius: 50%;
+}
+
+input[type=checkbox]:checked + .checkmark::after {
+  display: block;
+  /* Відображаємо галочку, коли чекбокс вибраний */
+}
+
+.rediobox-container.active .radiomark::after {
+  display: block;
+}
+
+.hide-tabs {
+  display: none;
+}
+
 .contact {
   padding-top: 100px;
   padding-bottom: 90px;
@@ -1358,10 +1928,6 @@ body {
   max-width: 739px;
   width: 100%;
   height: 518px;
-}
-
-.footer {
-  margin-top: 83px;
 }
 
 .footer-top__container {
@@ -1717,6 +2283,10 @@ body {
     margin-top: 119px;
   }
 
+  .signup-register {
+    margin-top: 119px;
+  }
+
   .contact__content-title {
     font-size: 37px;
   }
@@ -1737,6 +2307,24 @@ body {
   }
 }
 
+@media (max-width: 1023.98px) {
+  .signup-register__title {
+    text-align: center;
+  }
+
+  .signup-register__subtitle {
+    font-size: 24px;
+  }
+
+  .signup-register__form {
+    -ms-grid-columns: minmax(280px, 475px);
+    grid-template-columns: minmax(280px, 475px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 768px) {
   .signin-account__title {
     font-size: 24px;
@@ -1744,6 +2332,23 @@ body {
 
   .signin-contact {
     margin-top: 50px;
+  }
+
+  .signup-register__title {
+    font-size: 24px;
+  }
+
+  .signup-register__subtitle {
+    font-size: 18px;
+  }
+
+  .signup-register__form-tabs-btn:last-child {
+    padding: 0;
+  }
+
+  .signup-contact {
+    margin-top: 50px;
+    margin-bottom: 20px;
   }
 
   .contact {
@@ -1779,10 +2384,6 @@ body {
   }
 
   .contact__map {
-    margin-top: 50px;
-  }
-
-  .footer {
     margin-top: 50px;
   }
 
