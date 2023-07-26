@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.min.css?_v=20230726040716">
-	<title>Вход</title>
+	<title>Корзина</title>
 </head>
 
 <body>
@@ -144,26 +144,159 @@
 		</div>
 	</div>
 </header>
-      <main class="signin">
-         <section class="signin-account">
-            <div class="signin-account__container">
-               <div class="signin-account__nav nav">
+      <main class="basket">
+         <section class="popup hide">
+   <div class="popup__container">
+      <div class="popup__content">
+         <div class="popup__row">
+            <p class="popup__row-text">Орех соленый 80г.</p>
+            <div class="popup__row-btn">
+               <button class="incre"><img src="img/svgicons/decrement.svg" alt="Decrement"></button>
+               <span class="counter">0</span>
+               <button class="decre"><img src="img/svgicons/Increment.svg" alt="Increment"></button>
+            </div>
+            <p class="popup__row-price">100 грн.</p>
+            <img class="popup__row-cross" src="img/svgicons/cross.svg" alt="Cross">
+         </div>
+         <div class="popup__line"></div>
+         <div class="popup__subrow">
+            <p class="popup__subrow-text">Орех сладкий 80г. </p>
+            <div class="popup__subrow-btn">
+               <button class="incre"><img src="img/svgicons/decrement.svg" alt="Decrement"></button>
+               <span class="counter">0</span>
+               <button class="decre"><img src="img/svgicons/Increment.svg" alt="Increment"></button>
+            </div>
+            <p class="popup__subrow-price">80 грн.</p>
+            <img class="popup__row-cross" src="img/svgicons/cross.svg" alt="Cross">
+         </div>
+         <div class="popup__line"></div>
+         <div class="popup__price">
+            <p class="popup__price-text">Всего</p>
+            <p class="popup__price-num">175<span>грн.</span> </p>
+            <a class="popup__price-link" href="basket.html">Перейти в корзину</a>
+         </div>
+      </div>
+   </div>
+
+</section>
+         <section class="basket-account">
+            <div class="basket-account__container">
+               <div class="basket-account__nav nav">
                   <a href="index.html">Главная <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
    <path d="M7.00001 11L6.3 10.3L10.1 6.5H0V5.50002H10.1L6.3 1.7L7.00001 1.00002L12 6.00001L7.00001 11Z" fill="#8A8A8A"/>
-</svg></a>
-                  <a href="signin.html">Вход</a>
+</svg> </a>
+                  <a href="basket.html">Корзина</a>
                </div>
-               <h1 class="signin-account__title">Войти в личный кабинет</h1>
-
-               <form class="signin-account__form">
-                  <input class="signin-account__form-email inp-email" type="email" placeholder="Email">
-                  <input class="signin-account__form-password inp-email" type="password" placeholder="Пароль">
-                  <div class="signin-account__form-item">
-                     <a class="signin-account__form-forgot-password" href="passwordRecovery.html"> Забыли пароль?</a>
-                     <a class="signin-account__form-enter" href="office.html">Войти</a>
-                     <a class="signin-account__form-registration" href="signup.html">Регистрация</a>
+               <div class="basket-account__row">
+                  <h1 class="basket-account__row-title">Корзина</h1>
+                  <div class="basket-account__row-manager">
+                     <p>Ваш личный менеджер Олег</p>
+                     <a href="tel:+380677771412">
+                        <img src="img/svgicons/phone.svg" alt="phone">
+                        +38 067 777 14 12
+                     </a>
                   </div>
-               </form>
+               </div>
+               <div class="basket-account__table">
+                  <table class="basket-table table">
+                     <thead class="basket-table__header table__header">
+                        <tr class="basket-table__header-line">
+                           <th class="basket-table__header-th table__header-th">Товар
+                              <img src="img/svgicons/arrow-down.svg" alt="arrow-down">
+                           </th>
+                           <th class="basket-table__header-th table__header-th">Кол - во
+                              <img src="img/svgicons/arrow-down.svg" alt="arrow-down">
+                           </th>
+                           <th class="basket-table__header-th table__header-th">Цена за товар
+                              <img src="img/svgicons/arrow-down.svg" alt="arrow-down">
+                           </th>
+                           <th class="basket-table__header-th table__header-th">Итоговая стоимость
+                              <img src="img/svgicons/arrow-down.svg" alt="arrow-down">
+                           </th>
+
+                        </tr>
+                     </thead>
+                     <tbody class="basket-table__body">
+                        <tr class="basket-table__body-line">
+                           <td class="basket-table__body-td table__body-td">Орех соленый 80г. </td>
+                           <td class="basket-table__body-td table__body-td">
+                              <button class="decrement-button"><img src="img/svgicons/decrement.svg"
+                                    alt="Decrement"></button>
+                              <span class="quantity">0</span>
+                              <button class="increment-button"><img src="img/svgicons/Increment.svg"
+                                    alt="Increment"></button>
+                           </td>
+                           <td class="basket-table__body-td table__body-td">25 грн.</td>
+                           <td class="basket-table__body-td table__body-td total-price">0 грн.</td>
+                        </tr>
+                        <tr class="basket-table__body-line">
+                           <td class="basket-table__body-td table__body-td">Орех соленый 80г. </td>
+                           <td class="basket-table__body-td table__body-td">
+                              <button class="decrement-button">
+                                 <img src="img/svgicons/decrement.svg" alt="Decrement"></button>
+                              <span class="quantity">0</span>
+                              <button class="increment-button"><img src="img/svgicons/Increment.svg"
+                                    alt="Increment"></button>
+                           </td>
+                           <td class="basket-table__body-td table__body-td">25 грн.</td>
+                           <td class="basket-table__body-td table__body-td total-price">0 грн.</td>
+                        </tr>
+
+                        <tr class="basket-table__body-line">
+                           <td class="basket-table__body-td table__body-td">Орех соленый 80г. </td>
+                           <td class="basket-table__body-td table__body-td">
+                              <button class="decrement-button"><img src="img/svgicons/decrement.svg"
+                                    alt="Decrement"></button>
+                              <span class="quantity">0</span>
+                              <button class="increment-button"><img src="img/svgicons/Increment.svg"
+                                    alt="Increment"></button>
+                           </td>
+                           <td class="basket-table__body-td table__body-td">25 грн.</td>
+                           <td class="basket-table__body-td table__body-td total-price">0 грн.</td>
+                        </tr>
+
+                        <tr class="basket-table__body-line">
+                           <td class="basket-table__body-td table__body-td">Орех соленый 80г. </td>
+                           <td class="basket-table__body-td table__body-td">
+                              <button class="decrement-button"><img src="img/svgicons/decrement.svg"
+                                    alt="Decrement"></button>
+                              <span class="quantity">0</span>
+                              <button class="increment-button"><img src="img/svgicons/Increment.svg"
+                                    alt="Increment"></button>
+                           </td>
+                           <td class="basket-table__body-td table__body-td">25 грн.</td>
+                           <td class="basket-table__body-td table__body-td total-price">0 грн.</td>
+                        </tr>
+
+
+
+
+                     </tbody>
+                  </table>
+               </div>
+               <div class="basket-account__links">
+                  <div class="basket-account__links-shopping">
+                     <a href="shop.html">Продолжить покупки</a>
+                  </div>
+                  <div class="basket-account__links-order">
+                     <div class="basket-account__links-order-item">
+                        <p class="basket-account__links-order-all">Всего</p>
+                        <p class="basket-account__links-order-num">175<span>грн.</span></p>
+                     </div>
+                     <a class="basket-account__links-order-make" href="order.html">Оформить заказ</a>
+                  </div>
+
+               </div>
+               <div class="basket-account__info">
+                  <h3 class="basket-account__info-title">Для оформления заказа необходимо</h3>
+                  <div class="basket-account__info-links">
+                     <a href="signin.html">Авторизоваться</a>
+                     <span>или </span>
+                     <a href="signup.html">Зарегистрироваться</a>
+                  </div>
+
+
+               </div>
 
 
 
@@ -172,7 +305,7 @@
             </div>
 
          </section>
-         <section  class="signin-contact">
+         <section class="basket-contact">
             <div class="contact">
    <div class="contact__container">
       <div class="contact__content">
@@ -223,6 +356,7 @@
    </div>
 </div>
          </section>
+
       </main>
       <footer class="footer">
    <div class="footer-top">

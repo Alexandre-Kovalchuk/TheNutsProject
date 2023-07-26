@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-	 <head>
+ <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.min.css?_v=20230726040716">
-	<title>Главная</title>
+	<title>Заказ оформлен</title>
 </head>
-	<body>
-		<header class="header">
+
+<body>
+   <div class="wrapper">
+      <header class="header">
 	<div class="header-top">
 		<div class="header-top__container">
 			<div class="header-top__tel">
@@ -142,8 +144,8 @@
 		</div>
 	</div>
 </header>
-		<main class="main">
-					<section class="popup hide">
+      <main class="issued">
+         <section class="popup hide">
    <div class="popup__container">
       <div class="popup__content">
          <div class="popup__row">
@@ -177,10 +179,120 @@
    </div>
 
 </section>
-		</main>
-		
-		
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmvFEgAYsECjHbq7I4VWnsRz3uicXMvTg&_v=20230726040716"></script>
+         <section class="issued-banner">
+            <div class="issued-banner__images">
+               <picture>
+                  <source media="(max-width:768px)" srcset="img/order/bannerMobile.jpg">
+                  <source type="image/webp" srcset="img/order/banner.webp">
+                  <source type="image/jng" srcset="img/order/banner.jpg">
+                  <img src="img/order/banner.webp" alt="Banner" title="Banner">
+               </picture>
+            </div>
+            <div class="issued-banner__container">
+               <div class="issued-banner__content">
+                  <h1 class="issued-banner__content-title">Благодарим Вас за заказ!</h1>
+                  <p class="issued-banner__content-text">Наши менеджеры свяжутся с Вами 
+                     в ближайшее время</p>
+               </div>  
+            </div>
+         </section>
+         <section class="issued-contact">
+            <div class="contact">
+   <div class="contact__container">
+      <div class="contact__content">
+         <h2 class="contact__content-title">Контакты</h2>
+
+         <div class="contact__content-phone">
+            <img class="contact__icon" src="img/svgicons/phone.svg" alt="phone" title="phone">
+            <div class="contact__content-phone-number">
+               <a href="tel:+38 (095) 711 11 11">+38 (095) 711 11 11</a>
+               <a href="tel:+38 (095) 711 11 11">+38 (095) 711 11 11</a>
+            </div>
+            <div class="contact__content-phone-social">
+               <div class="messenger">
+   <a title="Viber" href="#"><img src="img/svgicons/viber.svg" alt="Viber" title="Viber"></a>
+   <a title="Telegram" href="#"><img src="img/svgicons/telegram.svg" alt="Telegram" title="Telegram"></a>
+   <a title="Whatsapp" href="#"><img src="img/svgicons/whatsapp.svg" alt="Whatsapp" title="Whatsapp"></a>
+</div>
+
+            </div>
+         </div>
+
+         <div class="contact__content-email">
+            <img class="contact__icon" src="img/svgicons/email.svg" alt="Email" title="Email">
+            <a href="mailto:nuts@nbsc.com.ua">nuts@nbsc.com.ua</a>
+         </div>
+         <div class="contact__content-office">
+            <img class="contact__icon" src="img/svgicons/office.svg" alt="Office" title="Office">
+            <div class="contact__content-info">
+               <h6 class="contact__content-subtitle">Офис и отдел продаж</h6>
+               <p class="contact__content-address">
+                  Украина, г. Одесса, <br>
+                  ул. Космонавтов, 32
+               </p>
+            </div>
+         </div>
+         <div class="contact__content-production">
+            <img class="contact__icon" src="img/svgicons/tree.svg" alt="Tree" title="Tree">
+            <div class="contact__content-info">
+               <h6 class="contact__content-subtitle">Производство</h6>
+               <p class="contact__content-address">
+                  Украина, Одесская обл, <br>
+                  с. Яськи, ул. Центральная, 232
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="contact__map" id="map"></div>
+   </div>
+</div>
+         </section>
+         <footer class="footer">
+   <div class="footer-top">
+      <div class="footer-top__container">
+         <div class="footer-top__logo">
+            <div class="logo">
+   <a title="Logo" href="index.html">
+      <img src="img/svgicons/logo.svg" alt="Logo" title="Logo">
+      ОРЕХ ПРИЧЕРНОМОРЬЯ
+   </a>
+</div>
+         </div>
+         <div class="footer-top__menu">
+            <nav class="footer-top__body">
+               <ul class="footer-top__list">
+                  <li class="footer-top__item"><a href="#" class="footer-top__link">Магазин</a></li>
+                  <li class="footer-top__item"><a href="#" class="footer-top__link">Корпоративным клиентам</a></li>
+                  <li class="footer-top__item"><a href="#" class="footer-top__link">Оплата и доставка</a></li>
+                  <li class="footer-top__item"><a href="#" class="footer-top__link">О производстве</a></li>
+                  <li class="footer-top__item"><a href="#" class="footer-top__link">Новости и статьи</a></li>
+                  <li class="footer-top__item"><a href="#" class="footer-top__link">Галерея</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </div>
+   <hr class="footer__line">
+
+   <div class="footer-bottom">
+      <div class="footer-bottom__container">
+         <p class="footer-bottom__develope">Разработано <span>AVADA MEDIA</span></p>
+         <p class="footer-bottom__copyrigth">Copyright © 2019. Все права защищены</p>
+
+         <div class="social">
+   <a title="Facebook" href="https://www.facebook.com"><img src="img/svgicons/facebook.svg" alt="facebook" title="Facebook"></a>
+   <a title="Instagram" href="https://www.instagram.com"><img src="img/svgicons/instagram.svg" alt="instagram" title="Instagram"></a>
+   <a title="Youtube" href="https://www.youtube.com"><img src="img/svgicons/youtube.svg" alt="youtube" title="Youtube"></a>
+</div>
+
+
+      </div>
+   </div>
+</footer>
+      </main>
+   </div>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmvFEgAYsECjHbq7I4VWnsRz3uicXMvTg&_v=20230726040716"></script>
 <script src="js/app.min.js?_v=20230726040716"></script>
-	</body>
+</body>
+
 </html>

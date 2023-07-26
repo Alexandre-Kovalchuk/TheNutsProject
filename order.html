@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.min.css?_v=20230726040716">
-	<title>Регистрация</title>
+	<title>Оформление заказа доставка курьер</title>
 </head>
 
 <body>
@@ -144,34 +144,167 @@
 		</div>
 	</div>
 </header>
-      <main class="signup">
-         <section class="signup-register">
-            <div class="signup-register__container">
-               <div class="signup-register__nav nav">
+      <main class="order">
+         <section class="popup hide">
+   <div class="popup__container">
+      <div class="popup__content">
+         <div class="popup__row">
+            <p class="popup__row-text">Орех соленый 80г.</p>
+            <div class="popup__row-btn">
+               <button class="incre"><img src="img/svgicons/decrement.svg" alt="Decrement"></button>
+               <span class="counter">0</span>
+               <button class="decre"><img src="img/svgicons/Increment.svg" alt="Increment"></button>
+            </div>
+            <p class="popup__row-price">100 грн.</p>
+            <img class="popup__row-cross" src="img/svgicons/cross.svg" alt="Cross">
+         </div>
+         <div class="popup__line"></div>
+         <div class="popup__subrow">
+            <p class="popup__subrow-text">Орех сладкий 80г. </p>
+            <div class="popup__subrow-btn">
+               <button class="incre"><img src="img/svgicons/decrement.svg" alt="Decrement"></button>
+               <span class="counter">0</span>
+               <button class="decre"><img src="img/svgicons/Increment.svg" alt="Increment"></button>
+            </div>
+            <p class="popup__subrow-price">80 грн.</p>
+            <img class="popup__row-cross" src="img/svgicons/cross.svg" alt="Cross">
+         </div>
+         <div class="popup__line"></div>
+         <div class="popup__price">
+            <p class="popup__price-text">Всего</p>
+            <p class="popup__price-num">175<span>грн.</span> </p>
+            <a class="popup__price-link" href="basket.html">Перейти в корзину</a>
+         </div>
+      </div>
+   </div>
+
+</section>
+         <section class="order-account">
+            <div class="order-account__container">
+               <div class="order-account__nav nav">
                   <a href="index.html">Главная <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
    <path d="M7.00001 11L6.3 10.3L10.1 6.5H0V5.50002H10.1L6.3 1.7L7.00001 1.00002L12 6.00001L7.00001 11Z" fill="#8A8A8A"/>
+</svg> </a>
+                  <a href="basket.html">Корзина <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+   <path d="M7.00001 11L6.3 10.3L10.1 6.5H0V5.50002H10.1L6.3 1.7L7.00001 1.00002L12 6.00001L7.00001 11Z" fill="#8A8A8A"/>
 </svg></a>
-                  <a href="signin.html">Регистрация</a>
+                  <a href="order.html">Оформление заказа </a>
                </div>
-               <h1 class="signup-register__title">Регистрация</h1>
-             
-               <form class="signup-register__form">
-                  <fieldset>
-                     <h3 class="signup-register__subtitle">1. Контактные данные</h3>
-                     <div class="signup-register__form-tabs">
-                        <p class="signup-register__form-tabs-btn btn-active">Физическое лицо</p>
-                        <p class="signup-register__form-tabs-btn">Юридическое лицо</p>
-                     </div>
-                     <hr class="signup-register__form-line">
+               <div class="order-account__row">
+                  <h1 class="order-account__row-title">Оформление заказа</h1>
+                  <div class="order-account__row-manager">
+                     <p>Ваш личный менеджер Олег</p>
+                     <a href="tel:+380677771412">
+                        <img src="img/svgicons/phone.svg" alt="phone">
+                        +38 067 777 14 12
+                     </a>
+                  </div>
+               </div>
+               <div class="order-account__table">
+                  <table class="basket-table table">
+                     <thead class="basket-table__header table__header">
+                        <tr class="basket-table__header-line">
+                           <th class="basket-table__header-th table__header-th">Товар
+                              <img src="img/svgicons/arrow-down.svg" alt="arrow-down">
+                           </th>
+                           <th class="basket-table__header-th table__header-th">Кол - во
+                              <img src="img/svgicons/arrow-down.svg" alt="arrow-down">
+                           </th>
+                           <th class="basket-table__header-th table__header-th">Цена за товар
+                              <img src="img/svgicons/arrow-down.svg" alt="arrow-down">
+                           </th>
+                           <th class="basket-table__header-th table__header-th">Итоговая стоимость
+                              <img src="img/svgicons/arrow-down.svg" alt="arrow-down">
+                           </th>
 
-                     <div class="signup-register__form-info">
-                        <input class="inp" type="text" placeholder="ФИО*">
-                        <input class="inp" type="email" placeholder="Email*">
-                        <input class="inp" type="tel" placeholder="Телефон*">
+                        </tr>
+                     </thead>
+                     <tbody class="basket-table__body">
+                        <tr class="basket-table__body-line">
+                           <td class="basket-table__body-td table__body-td">Орех соленый 80г. </td>
+                           <td class="basket-table__body-td table__body-td">
+                              <button class="decrement-button"><img src="img/svgicons/decrement.svg"
+                                    alt="Decrement"></button>
+                              <span class="quantity">0</span>
+                              <button class="increment-button"><img src="img/svgicons/Increment.svg"
+                                    alt="Increment"></button>
+                           </td>
+                           <td class="basket-table__body-td table__body-td">25 грн.</td>
+                           <td class="basket-table__body-td table__body-td total-price">0 грн.</td>
+                        </tr>
+                        <tr class="basket-table__body-line">
+                           <td class="basket-table__body-td table__body-td">Орех соленый 80г. </td>
+                           <td class="basket-table__body-td table__body-td">
+                              <button class="decrement-button">
+                                 <img src="img/svgicons/decrement.svg" alt="Decrement"></button>
+                              <span class="quantity">0</span>
+                              <button class="increment-button"><img src="img/svgicons/Increment.svg"
+                                    alt="Increment"></button>
+                           </td>
+                           <td class="basket-table__body-td table__body-td">25 грн.</td>
+                           <td class="basket-table__body-td table__body-td total-price">0 грн.</td>
+                        </tr>
+
+                        <tr class="basket-table__body-line">
+                           <td class="basket-table__body-td table__body-td">Орех соленый 80г. </td>
+                           <td class="basket-table__body-td table__body-td">
+                              <button class="decrement-button"><img src="img/svgicons/decrement.svg"
+                                    alt="Decrement"></button>
+                              <span class="quantity">0</span>
+                              <button class="increment-button"><img src="img/svgicons/Increment.svg"
+                                    alt="Increment"></button>
+                           </td>
+                           <td class="basket-table__body-td table__body-td">25 грн.</td>
+                           <td class="basket-table__body-td table__body-td total-price">0 грн.</td>
+                        </tr>
+
+                        <tr class="basket-table__body-line">
+                           <td class="basket-table__body-td table__body-td">Орех соленый 80г. </td>
+                           <td class="basket-table__body-td table__body-td">
+                              <button class="decrement-button"><img src="img/svgicons/decrement.svg"
+                                    alt="Decrement"></button>
+                              <span class="quantity">0</span>
+                              <button class="increment-button"><img src="img/svgicons/Increment.svg"
+                                    alt="Increment"></button>
+                           </td>
+                           <td class="basket-table__body-td table__body-td">25 грн.</td>
+                           <td class="basket-table__body-td table__body-td total-price">0 грн.</td>
+                        </tr>
+
+
+
+
+                     </tbody>
+                  </table>
+               </div>
+               <div class="order-account__price">
+                  <div class="basket-account__links-order-item">
+                     <p class="basket-account__links-order-all">Всего</p>
+                     <p class="basket-account__links-order-num">175<span>грн.</span></p>
+                  </div>
+               </div>
+               <div class="order-account__contact">
+                  <h4 class="order-account__subtitle">1. Контактные данные</h4>
+                  <form class="order-account__contact-form">
+                     <input class="inp" type="text" placeholder="ФИО*">
+                     <input class="inp" type="email" placeholder="Email*">
+                     <input class="inp" type="tel" placeholder="Телефон*">
+                  </form>
+               </div>
+               <div class="order-account__delivery">
+                  <h4 class="order-account__subtitle">2. Способ доставки</h4>
+
+                  <form class="order-account__delivery-form">
+
+                     <div class="order-account__delivery-form-radio-delivery">
+                        <label class="radio-box">
+                           <input class="radio-box__inp" type="radio" id="delivery">
+                           <span class="radio-box__mark"></span>
+                           Новая почта (по Украине, оплата за счет Клиента)
+                        </label>
                      </div>
 
-                     <div class="signup-register__form-address">
-                        <h3 class="signup-register__subtitle">2. Адрес</h3>
+                     <div class="order-account__delivery-form-item hide">
                         <div class="signup-register__form-country">
                            <div class="signup-register__form-country-select">
                               <span class="signup-register__form-country-current">Страна</span>
@@ -199,157 +332,55 @@
                               </ul>
                            </div>
                         </div>
-
-                        <input class="inp" type="text" placeholder="Город*">
-                        <input class="inp" type="text" placeholder="Адрес">
-
                      </div>
 
-
-                     <div class="signup-register__form-password">
-                        <h3 class="signup-register__subtitle">3. Пароль</h3>
-                        <input class="inp" type="password" placeholder="Пароль*">
-                        <input class="inp" type="password" placeholder="Подтвердите пароль*">
-                        <div class="signup-register__form-password-check">
-                           <label class="checkbox-container">
-                              <input class="check" type="checkbox">
-                              <span class="checkmark"></span>
-                              Я согласен с <span class="check-green"> Условиями регистрации</span>
-                           </label>
-
-                        </div>
-
-                        <a class="signup-register__form-password-link" title="Enter Office" href="office.html">Продолжить</a>
-                     </div>
-                  </fieldset>
-                  <fieldset>
-
-                     <div class="signup-register__form-file">
-                        <label class="signup-register__form-file-label" for="inp-file">
-                           <img class="inp-image" src="img/svgicons/file.svg" alt="file" title="file">
+                     <div class="order-account__delivery-form-subradio-delivery">
+                        <label class="radio-box">
+                           <input class="radio-box__inp" type="radio" id="delivery">
+                           <span class="radio-box__mark"></span>
+                           Курьер по Одессе <img src="img/svgicons/free.svg" alt="free">
                         </label>
-                        <input class="signup-register__form-file-inp" type="file" id="inp-file" accept="image/*">
+                        <input class="inp inp-address hide" type="tel" placeholder="Адрес*">
                      </div>
-                     <div class="signup-register__form-file-check">
-                        <label class="checkbox-container">
-                           <input class="check" type="checkbox">
-                           <span class="checkmark"></span>
-                           Являюсь ФОП
+
+                     <div class="order-account__delivery-form-self-pickup">
+                        <label class="radio-box">
+                           <input class="radio-box__inp" type="radio" id="delivery">
+                           <span class="radio-box__mark"></span>
+                           Самовывоз со склада
                         </label>
                      </div>
 
-                     <div class="signup-register__form-legalentity hide-tabs ">
 
-                        <div class="signup-register__form-radio">
-                           <label class="rediobox-container">
-                              <input class="radio" type="radio">
-                              <span class="radiomark"></span>
-                              Юр. лицо
-                           </label>
-                           <label class="rediobox-container">
-                              <input class="radio" type="radio">
-                              <span class="radiomark"></span>
-                              ФОП
-                           </label>
-                        </div>
+                  </form>
 
-                        <div class="signup-register__form-item">
-                           <div class="signup-register__form-props">
-                              <h3 class="signup-register__subtitle">1. Реквизиты</h3>
-                              <input class="inp" type="text" placeholder="ОКПО">
-                           </div>
+               </div>
+               <div class="order-account__pay">
+                  <h4 class="order-account__subtitle">3. Способ оплаты</h4>
+                  <form class="order-account__pay-form">
+                     <label class="radio-box">
+                        <input class="radio-box__inp" type="radio" id="delivery">
+                        <span class="radio-box__mark"></span>
+                        Безналичный расчет
+                     </label>
+                     <label class="radio-box">
+                        <input class="radio-box__inp" type="radio" id="delivery">
+                        <span class="radio-box__mark"></span>
+                        LiqPay / Приват24
+                     </label>
+                     <label class="radio-box">
+                        <input class="radio-box__inp" type="radio" id="delivery">
+                        <span class="radio-box__mark"></span>
+                        Наличными при получении (Наложенным платежом)
+                     </label>
+                    
+                  </form>
+                  <a class="order-account__pay-link" href="orderPlaced.html">Продолжить</a>
 
-                           <div class="signup-register__form-legaladdress">
-                              <h3 class="signup-register__subtitle">2. Юридический адрес</h3>
-                              <div class="signup-register__form-country">
-                                 <div class="signup-register__form-country-select">
-                                    <span class="signup-register__form-country-current">Страна</span>
-                                    <div class="signup-register__form-country-arrow">
-                                       <img src="img/svgicons/arrow-down.svg" alt="arrow-down" title="arrow-down">
-                                    </div>
-                                    <ul class="signup-register__form-country-list">
-                                       <li class="signup-register__form-country-item">Україна</li>
-                                       <li class="signup-register__form-country-item">Польща</li>
-                                       <li class="signup-register__form-country-item">США</li>
-                                    </ul>
-                                 </div>
-                              </div>
-
-                              <div class="signup-register__form-region">
-                                 <div class="signup-register__form-region-select">
-                                    <span class="signup-register__form-region-current">Область</span>
-                                    <div class="signup-register__form-region-arrow">
-                                       <img src="img/svgicons/arrow-down.svg" alt="arrow-down" title="arrow-down">
-                                    </div>
-                                    <ul class="signup-register__form-region-list">
-                                       <li class="signup-register__form-region-item">Волинська обл</li>
-                                       <li class="signup-register__form-region-item">Одеська обл</li>
-                                       <li class="signup-register__form-region-item">Київська обл</li>
-                                    </ul>
-                                 </div>
-                              </div>
-
-                              <input class="inp" type="text" placeholder="Город*">
-                              <input class="inp" type="text" placeholder="Адрес">
-                              <input class="inp" type="text" placeholder="Индекс">
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="signup-register__form-fop hide-tabs">
-                        <h3 class="signup-register__subtitle">1. Реквизиты</h3>
-                        <div class="signup-register__form-fop-props">
-                           <input class="inp" type="text" placeholder="ЕДРПО">
-                        </div>
-
-                        <div class="signup-register__form-fop-address">
-                           <h3 class="signup-register__subtitle">2. Адрес ФОП</h3>
-                           <div class="signup-register__form-country">
-                              <div class="signup-register__form-country-select">
-                                 <span class="signup-register__form-country-current">Страна</span>
-                                 <div class="signup-register__form-country-arrow">
-                                    <img src="img/svgicons/arrow-down.svg" alt="arrow-down" title="arrow-down">
-                                 </div>
-                                 <ul class="signup-register__form-country-list">
-                                    <li class="signup-register__form-country-item">Україна</li>
-                                    <li class="signup-register__form-country-item">Польща</li>
-                                    <li class="signup-register__form-country-item">США</li>
-                                 </ul>
-                              </div>
-                           </div>
-
-                           <div class="signup-register__form-region">
-                              <div class="signup-register__form-region-select">
-                                 <span class="signup-register__form-region-current">Область</span>
-                                 <div class="signup-register__form-region-arrow">
-                                    <img src="img/svgicons/arrow-down.svg" alt="arrow-down" title="arrow-down">
-                                 </div>
-                                 <ul class="signup-register__form-region-list">
-                                    <li class="signup-register__form-region-item">Волинська обл</li>
-                                    <li class="signup-register__form-region-item">Одеська обл</li>
-                                    <li class="signup-register__form-region-item">Київська обл</li>
-                                 </ul>
-                              </div>
-                           </div>
-
-                           <input class="inp" type="text" placeholder="Город*">
-                           <input class="inp" type="text" placeholder="Адрес">
-                        </div>
-                     </div>
-
-
-
-
-
-                  </fieldset>
-
-
-
-               </form>
+               </div>
             </div>
-
          </section>
-         <section class="signup-contact">
+         <section class="order-contact">
             <div class="contact">
    <div class="contact__container">
       <div class="contact__content">
