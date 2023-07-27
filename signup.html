@@ -4,7 +4,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230726040716">
+	<meta name="description" content="Экологически чистые, качественные ядра грецкого ореха и фундука, 
+	а также плоды шиповника в удобной, надежной, вакуумной упаковке 
+	разного объема.">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230727173456" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230727173456">
 	<title>Регистрация</title>
 </head>
 
@@ -401,6 +405,31 @@
 </div>
          </section>
       </main>
+      <div class="preloader">
+   <div class="wrap">
+      <figure class="loader">
+         <div class="chomper"></div>
+      </figure>
+   </div>
+</div>
+
+
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+      const loader = document.querySelector('.wrap');
+      const main = document.querySelector('main');
+      const animationDuration = 3090;
+
+      function showMain() {
+         loader.style.display = 'none';
+         main.style.display = 'block';
+      }
+
+      setTimeout(showMain, animationDuration);
+
+   });
+</script>
       <footer class="footer">
    <div class="footer-top">
       <div class="footer-top__container">
@@ -444,8 +473,8 @@
    </div>
 </footer>
    </div>
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmvFEgAYsECjHbq7I4VWnsRz3uicXMvTg&_v=20230726040716"></script>
-<script src="js/app.min.js?_v=20230726040716"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmvFEgAYsECjHbq7I4VWnsRz3uicXMvTg&_v=20230727173456"></script>
+<script src="js/app.min.js?_v=20230727173456"></script>
 </body>
 
 </html>

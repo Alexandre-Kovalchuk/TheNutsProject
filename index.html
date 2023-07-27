@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-	 <head>
+ <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230726040716">
+	<meta name="description" content="Экологически чистые, качественные ядра грецкого ореха и фундука, 
+	а также плоды шиповника в удобной, надежной, вакуумной упаковке 
+	разного объема.">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230727173456" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230727173456">
 	<title>Главная</title>
 </head>
-	<body>
+
+<body>
+	<div class="wrapper">
 		<header class="header">
 	<div class="header-top">
 		<div class="header-top__container">
@@ -143,7 +149,7 @@
 	</div>
 </header>
 		<main class="main">
-					<section class="popup hide">
+			<section class="popup hide">
    <div class="popup__container">
       <div class="popup__content">
          <div class="popup__row">
@@ -177,10 +183,78 @@
    </div>
 
 </section>
+
 		</main>
-		
-		
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmvFEgAYsECjHbq7I4VWnsRz3uicXMvTg&_v=20230726040716"></script>
-<script src="js/app.min.js?_v=20230726040716"></script>
-	</body>
+		<footer class="footer">
+   <div class="footer-top">
+      <div class="footer-top__container">
+         <div class="footer-top__logo">
+            <div class="logo">
+   <a title="Logo" href="index.html">
+      <img src="img/svgicons/logo.svg" alt="Logo" title="Logo">
+      ОРЕХ ПРИЧЕРНОМОРЬЯ
+   </a>
+</div>
+         </div>
+         <div class="footer-top__menu">
+            <nav class="footer-top__body">
+               <ul class="footer-top__list">
+                  <li class="footer-top__item"><a href="#" class="footer-top__link">Магазин</a></li>
+                  <li class="footer-top__item"><a href="#" class="footer-top__link">Корпоративным клиентам</a></li>
+                  <li class="footer-top__item"><a href="#" class="footer-top__link">Оплата и доставка</a></li>
+                  <li class="footer-top__item"><a href="#" class="footer-top__link">О производстве</a></li>
+                  <li class="footer-top__item"><a href="#" class="footer-top__link">Новости и статьи</a></li>
+                  <li class="footer-top__item"><a href="#" class="footer-top__link">Галерея</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </div>
+   <hr class="footer__line">
+
+   <div class="footer-bottom">
+      <div class="footer-bottom__container">
+         <p class="footer-bottom__develope">Разработано <span>AVADA MEDIA</span></p>
+         <p class="footer-bottom__copyrigth">Copyright © 2019. Все права защищены</p>
+
+         <div class="social">
+   <a title="Facebook" href="https://www.facebook.com"><img src="img/svgicons/facebook.svg" alt="facebook" title="Facebook"></a>
+   <a title="Instagram" href="https://www.instagram.com"><img src="img/svgicons/instagram.svg" alt="instagram" title="Instagram"></a>
+   <a title="Youtube" href="https://www.youtube.com"><img src="img/svgicons/youtube.svg" alt="youtube" title="Youtube"></a>
+</div>
+
+
+      </div>
+   </div>
+</footer>
+	</div>
+	<div class="preloader">
+   <div class="wrap">
+      <figure class="loader">
+         <div class="chomper"></div>
+      </figure>
+   </div>
+</div>
+
+
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+      const loader = document.querySelector('.wrap');
+      const main = document.querySelector('main');
+      const animationDuration = 3090;
+
+      function showMain() {
+         loader.style.display = 'none';
+         main.style.display = 'block';
+      }
+
+      setTimeout(showMain, animationDuration);
+
+   });
+</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmvFEgAYsECjHbq7I4VWnsRz3uicXMvTg&_v=20230727173456"></script>
+<script src="js/app.min.js?_v=20230727173456"></script>
+</body>
+
 </html>
