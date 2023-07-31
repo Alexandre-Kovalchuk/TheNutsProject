@@ -9,7 +9,7 @@
 	разного объема.">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230731215752" />
 	<link rel="stylesheet" href="css/style.min.css?_v=20230731215752">
-	<title>Оформление заказа доставка курьер</title>
+	<title>Галерея</title>
 </head>
 
 <body>
@@ -148,7 +148,7 @@
 		</div>
 	</div>
 </header>
-      <main class="order">
+      <main class="gallery">
          <section class="popup hide">
    <div class="popup__container">
       <div class="popup__content">
@@ -183,208 +183,188 @@
    </div>
 
 </section>
-         <section class="order-account">
-            <div class="order-account__container">
-               <div class="order-account__nav nav">
+         <section class="gallery-banner">
+            <div class="gallery-banner__images">
+               <picture>
+                  <source type="image/webp" srcset="img/gallery/gallery-banner.webp">
+                  <source type="image/png" srcset="img/gallery/gallery-banner.png">
+                  <img src="img/gallery/gallery-banner.webp" alt="Banner" title="Banner">
+               </picture>
+            </div>
+            <div class="gallery-banner__container">
+               <div class="gallery-banner__nav nav-banner">
                   <a href="index.html">Главная <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-   <path d="M7.00001 11L6.3 10.3L10.1 6.5H0V5.50002H10.1L6.3 1.7L7.00001 1.00002L12 6.00001L7.00001 11Z" fill="#8A8A8A"/>
-</svg> </a>
-                  <a href="basket.html">Корзина <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-   <path d="M7.00001 11L6.3 10.3L10.1 6.5H0V5.50002H10.1L6.3 1.7L7.00001 1.00002L12 6.00001L7.00001 11Z" fill="#8A8A8A"/>
-</svg></a>
-                  <a href="order.html">Оформление заказа </a>
+   <path d="M7.00001 11L6.3 10.3L10.1 6.5H0V5.50002H10.1L6.3 1.7L7.00001 1.00002L12 6.00001L7.00001 11Z" fill="white"/>
+ </svg></a>
+                  <a href="gallery.html">Галерея</a>
                </div>
-               <div class="order-account__row">
-                  <h1 class="order-account__row-title">Оформление заказа</h1>
-                  <div class="order-account__row-manager">
-                     <p>Ваш личный менеджер Олег</p>
-                     <a href="tel:+380677771412">
-                        <img src="img/svgicons/phone.svg" alt="phone">
-                        +38 067 777 14 12
-                     </a>
+
+               <div class="gallery-banner__content">
+                  <h1 class="gallery-banner__content-title">Галерея</h1>
+                  <p class="gallery-banner__content-text">Кадры социальной активности компании</p>
+
+               </div>
+
+            </div>
+
+
+         </section>
+         <section class="gallery-images">
+            <div class="gallery-images__container">
+               <div class="gallery-images__firstrow">
+                  <div class="gallery-images__firstrow-left">
+                     <picture>
+                        <source type="image/webp" srcset="img/gallery/img1.webp">
+                        <source type="image/png" srcset="img/gallery/img1.png">
+                        <img src="img/gallery/img1.webp" alt="Banner" title="Banner" loading="lazy">
+                     </picture>
+
+                  </div>
+
+                  <div class="gallery-images__firstrow-right">
+                     <picture>
+                        <source type="image/webp" srcset="img/gallery/img2.webp">
+                        <source type="image/png" srcset="img/gallery/img2.png">
+                        <img src="img/gallery/img2.webp" alt="Banner" title="Banner" loading="lazy">
+                     </picture>
+                     <div class="gallery-images__firstrow-item">
+                        <h3 class="gallery-images__subtitle">SIAL Paris 2018 </h3>
+                        <p class="gallery-images__firstrow-text">В этом Году при поддержке проекта International Trade
+                           Centre Ukraine, и финансировании правительства Швеции, мы побывали
+                           на крупнейшей продовольственной выставке Европы <span>SIAL Paris 2018</span>
+                        </p>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="gallery-images__secondrow">
+                  <picture>
+                     <source type="image/webp" srcset="img/gallery/img3.webp">
+                     <source type="image/png" srcset="img/gallery/img3.png">
+                     <img src="img/gallery/img3.webp" alt="Banner" title="Banner" loading="lazy">
+                  </picture>
+                  <div class="gallery-images__secondrow-item">
+                     <span class="icon-play"></span>
+                     <h3 class="gallery-images__subtitle">Проект UBHDP </h3>
+                     <p class="gallery-images__secondrow-text">Вчера к нам приезжал американский агроном Рон , спасибо
+                        Мельнику Евгению и проекту <span>UBHDP</span> за возможность получить консультацию
+                        от мировых специалистов!
+                     </p>
+                  </div>
+
+               </div>
+               <div class="gallery-images__thirdrow">
+                  <div class="gallery-images__thirdrow-left">
+                     <picture>
+                        <source type="image/webp" srcset="img/gallery/img4.webp">
+                        <source type="image/png" srcset="img/gallery/img4.png">
+                        <img src="img/gallery/img4.webp" alt="Banner" title="Banner" loading="lazy">
+                     </picture>
+                  </div>
+                  <div class="gallery-images__thirdrow-middle">
+                     <picture>
+                        <source type="image/webp" srcset="img/gallery/img5.webp">
+                        <source type="image/png" srcset="img/gallery/img5.png">
+                        <img src="img/gallery/img5.webp" alt="Banner" title="Banner" loading="lazy">
+                     </picture>
+                  </div>
+                  <div class="gallery-images__thirdrow-right">
+                     <picture>
+                        <source type="image/webp" srcset="img/gallery/img6.webp">
+                        <source type="image/png" srcset="img/gallery/img6.png">
+                        <img src="img/gallery/img6.webp" alt="Banner" title="Banner" loading="lazy">
+                     </picture>
+
+                     <div class="gallery-images__thirdrow-item">
+                        <span class="icon-play"></span>
+                        <h3 class="gallery-images__subtitle">Проект UBHDP </h3>
+                        <p class="gallery-images__secondrow-text">Вчера к нам приезжал американский агроном Рон ,
+                           спасибо
+                           Мельнику Евгению и проекту <span>UBHDP</span> за возможность получить консультацию
+                           от мировых специалистов!
+                        </p>
+                     </div>
+
                   </div>
                </div>
-               <div class="order-account__table">
-                  <table class="basket-table table">
-                     <thead class="basket-table__header table__header">
-                        <tr class="basket-table__header-line">
-                           <th class="basket-table__header-th table__header-th">Товар
-                              <img src="img/svgicons/arrow-down.svg" alt="arrow-down">
-                           </th>
-                           <th class="basket-table__header-th table__header-th">Кол - во
-                              <img src="img/svgicons/arrow-down.svg" alt="arrow-down">
-                           </th>
-                           <th class="basket-table__header-th table__header-th">Цена за товар
-                              <img src="img/svgicons/arrow-down.svg" alt="arrow-down">
-                           </th>
-                           <th class="basket-table__header-th table__header-th">Итоговая стоимость
-                              <img src="img/svgicons/arrow-down.svg" alt="arrow-down">
-                           </th>
+               <div class="gallery-images__subfirstrow">
+                  <div class="gallery-images__subfirstrow-left">
+                     <picture>
+                        <source type="image/webp" srcset="img/gallery/img7.webp">
+                        <source type="image/png" srcset="img/gallery/img7.png">
+                        <img src="img/gallery/img7.webp" alt="Banner" title="Banner" loading="lazy">
+                     </picture>
+                  </div>
 
-                        </tr>
-                     </thead>
-                     <tbody class="basket-table__body">
-                        <tr class="basket-table__body-line">
-                           <td class="basket-table__body-td table__body-td">Орех соленый 80г. </td>
-                           <td class="basket-table__body-td table__body-td">
-                              <button class="decrement-button"><img src="img/svgicons/decrement.svg"
-                                    alt="Decrement"></button>
-                              <span class="quantity">0</span>
-                              <button class="increment-button"><img src="img/svgicons/Increment.svg"
-                                    alt="Increment"></button>
-                           </td>
-                           <td class="basket-table__body-td table__body-td">25 грн.</td>
-                           <td class="basket-table__body-td table__body-td total-price">0 грн.</td>
-                        </tr>
-                        <tr class="basket-table__body-line">
-                           <td class="basket-table__body-td table__body-td">Орех соленый 80г. </td>
-                           <td class="basket-table__body-td table__body-td">
-                              <button class="decrement-button">
-                                 <img src="img/svgicons/decrement.svg" alt="Decrement"></button>
-                              <span class="quantity">0</span>
-                              <button class="increment-button"><img src="img/svgicons/Increment.svg"
-                                    alt="Increment"></button>
-                           </td>
-                           <td class="basket-table__body-td table__body-td">25 грн.</td>
-                           <td class="basket-table__body-td table__body-td total-price">0 грн.</td>
-                        </tr>
+                  <div class="gallery-images__subfirstrow-right">
+                     <picture>
+                        <source type="image/webp" srcset="img/gallery/img1.webp">
+                        <source type="image/png" srcset="img/gallery/img1.png">
+                        <img src="img/gallery/img1.webp" alt="Banner" title="Banner" loading="lazy">
+                     </picture>
 
-                        <tr class="basket-table__body-line">
-                           <td class="basket-table__body-td table__body-td">Орех соленый 80г. </td>
-                           <td class="basket-table__body-td table__body-td">
-                              <button class="decrement-button"><img src="img/svgicons/decrement.svg"
-                                    alt="Decrement"></button>
-                              <span class="quantity">0</span>
-                              <button class="increment-button"><img src="img/svgicons/Increment.svg"
-                                    alt="Increment"></button>
-                           </td>
-                           <td class="basket-table__body-td table__body-td">25 грн.</td>
-                           <td class="basket-table__body-td table__body-td total-price">0 грн.</td>
-                        </tr>
+                  </div>
 
-                        <tr class="basket-table__body-line">
-                           <td class="basket-table__body-td table__body-td">Орех соленый 80г. </td>
-                           <td class="basket-table__body-td table__body-td">
-                              <button class="decrement-button"><img src="img/svgicons/decrement.svg"
-                                    alt="Decrement"></button>
-                              <span class="quantity">0</span>
-                              <button class="increment-button"><img src="img/svgicons/Increment.svg"
-                                    alt="Increment"></button>
-                           </td>
-                           <td class="basket-table__body-td table__body-td">25 грн.</td>
-                           <td class="basket-table__body-td table__body-td total-price">0 грн.</td>
-                        </tr>
-
-
-
-
-                     </tbody>
-                  </table>
                </div>
-               <div class="order-account__price">
-                  <div class="basket-account__links-order-item">
-                     <p class="basket-account__links-order-all">Всего</p>
-                     <p class="basket-account__links-order-num">175<span>грн.</span></p>
+               <div class="gallery-images__secondrow">
+                  <picture>
+                     <source type="image/webp" srcset="img/gallery/img3.webp">
+                     <source type="image/png" srcset="img/gallery/img3.png">
+                     <img src="img/gallery/img3.webp" alt="Banner" title="Banner" loading="lazy">
+                  </picture>
+                  <div class="gallery-images__secondrow-item">
+                     <span class="icon-play"></span>
+                     <h3 class="gallery-images__subtitle">Проект UBHDP </h3>
+                     <p class="gallery-images__secondrow-text">Вчера к нам приезжал американский агроном Рон , спасибо
+                        Мельнику Евгению и проекту <span>UBHDP</span> за возможность получить консультацию
+                        от мировых специалистов!
+                     </p>
+                  </div>
+
+               </div>
+               <div class="gallery-images__thirdrow">
+                  <div class="gallery-images__thirdrow-left">
+                     <picture>
+                        <source type="image/webp" srcset="img/gallery/img4.webp">
+                        <source type="image/png" srcset="img/gallery/img4.png">
+                        <img src="img/gallery/img4.webp" alt="Banner" title="Banner" loading="lazy">
+                     </picture>
+                  </div>
+                  <div class="gallery-images__thirdrow-middle">
+                     <picture>
+                        <source type="image/webp" srcset="img/gallery/img5.webp">
+                        <source type="image/png" srcset="img/gallery/img5.png">
+                        <img src="img/gallery/img5.webp" alt="Banner" title="Banner" loading="lazy">
+                     </picture>
+                  </div>
+                  <div class="gallery-images__thirdrow-right">
+                     <picture>
+                        <source type="image/webp" srcset="img/gallery/img6.webp">
+                        <source type="image/png" srcset="img/gallery/img6.png">
+                        <img src="img/gallery/img6.webp" alt="Banner" title="Banner" loading="lazy">
+                     </picture>
+
+                     <div class="gallery-images__thirdrow-item">
+                        <span class="icon-play"></span>
+                        <h3 class="gallery-images__subtitle">Проект UBHDP </h3>
+                        <p class="gallery-images__secondrow-text">Вчера к нам приезжал американский агроном Рон ,
+                           спасибо
+                           Мельнику Евгению и проекту <span>UBHDP</span> за возможность получить консультацию
+                           от мировых специалистов!
+                        </p>
+                     </div>
+
                   </div>
                </div>
-               <div class="order-account__contact">
-                  <h4 class="order-account__subtitle">1. Контактные данные</h4>
-                  <form class="order-account__contact-form">
-                     <input class="inp" type="text" placeholder="ФИО*">
-                     <input class="inp" type="email" placeholder="Email*">
-                     <input class="inp" type="tel" placeholder="Телефон*">
-                  </form>
-               </div>
-               <div class="order-account__delivery">
-                  <h4 class="order-account__subtitle">2. Способ доставки</h4>
-
-                  <form class="order-account__delivery-form">
-
-                     <div class="order-account__delivery-form-radio-delivery">
-                        <label class="radio-box">
-                           <input class="radio-box__inp" type="radio" id="delivery">
-                           <span class="radio-box__mark"></span>
-                           Новая почта (по Украине, оплата за счет Клиента)
-                        </label>
-                     </div>
-
-                     <div class="order-account__delivery-form-item hide">
-                        <div class="signup-register__form-country">
-                           <div class="signup-register__form-country-select">
-                              <span class="signup-register__form-country-current">Страна</span>
-                              <div class="signup-register__form-country-arrow">
-                                 <img src="img/svgicons/arrow-down.svg" alt="arrow-down" title="arrow-down">
-                              </div>
-                              <ul class="signup-register__form-country-list">
-                                 <li class="signup-register__form-country-item">Україна</li>
-                                 <li class="signup-register__form-country-item">Польща</li>
-                                 <li class="signup-register__form-country-item">США</li>
-                              </ul>
-                           </div>
-                        </div>
-
-                        <div class="signup-register__form-region">
-                           <div class="signup-register__form-region-select">
-                              <span class="signup-register__form-region-current">Область</span>
-                              <div class="signup-register__form-region-arrow">
-                                 <img src="img/svgicons/arrow-down.svg" alt="arrow-down" title="arrow-down">
-                              </div>
-                              <ul class="signup-register__form-region-list">
-                                 <li class="signup-register__form-region-item">Волинська обл</li>
-                                 <li class="signup-register__form-region-item">Одеська обл</li>
-                                 <li class="signup-register__form-region-item">Київська обл</li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="order-account__delivery-form-subradio-delivery">
-                        <label class="radio-box">
-                           <input class="radio-box__inp" type="radio" id="delivery">
-                           <span class="radio-box__mark"></span>
-                           Курьер по Одессе <img src="img/svgicons/free.svg" alt="free">
-                        </label>
-                        <input class="inp inp-address hide" type="tel" placeholder="Адрес*">
-                     </div>
-
-                     <div class="order-account__delivery-form-self-pickup">
-                        <label class="radio-box">
-                           <input class="radio-box__inp" type="radio" id="delivery">
-                           <span class="radio-box__mark"></span>
-                           Самовывоз со склада
-                        </label>
-                     </div>
 
 
-                  </form>
-
-               </div>
-               <div class="order-account__pay">
-                  <h4 class="order-account__subtitle">3. Способ оплаты</h4>
-                  <form class="order-account__pay-form">
-                     <label class="radio-box">
-                        <input class="radio-box__inp" type="radio" id="delivery">
-                        <span class="radio-box__mark"></span>
-                        Безналичный расчет
-                     </label>
-                     <label class="radio-box">
-                        <input class="radio-box__inp" type="radio" id="delivery">
-                        <span class="radio-box__mark"></span>
-                        LiqPay / Приват24
-                     </label>
-                     <label class="radio-box">
-                        <input class="radio-box__inp" type="radio" id="delivery">
-                        <span class="radio-box__mark"></span>
-                        Наличными при получении (Наложенным платежом)
-                     </label>
-                    
-                  </form>
-                  <a class="order-account__pay-link" href="orderPlaced.html">Продолжить</a>
-
+               <div class="gallery-images__btn">
+                  <a title="See more" href="#">Посмотреть еще</a>
                </div>
             </div>
+
          </section>
-         <section class="order-contact">
+         <section class="gallery-contact">
             <div class="contact">
    <div class="contact__container">
       <div class="contact__content">
