@@ -4262,7 +4262,10 @@ input[type=checkbox]:checked + .checkmark::after {
 .main-sub-about__content-item {
   text-align: center;
   position: absolute;
-  top: 96px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 0;
   right: 0;
   display: -webkit-box;
@@ -8560,14 +8563,6 @@ input[type=checkbox]:checked + .checkmark::after {
     grid-row-gap: 30px;
   }
 
-  .main-sub-about__content-item {
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    padding: 0 40px;
-  }
-
   .main-eco__title {
     font-size: 37px;
   }
@@ -9093,14 +9088,6 @@ input[type=checkbox]:checked + .checkmark::after {
 
   .main-sub-about__content-column {
     height: auto;
-  }
-
-  .main-sub-about__content-item {
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    padding: 0 40px;
   }
 
   .main-sub-about__content-item > h5 {
@@ -9925,10 +9912,6 @@ input[type=checkbox]:checked + .checkmark::after {
 
   .main-banner__content-text {
     padding-bottom: 20px;
-  }
-
-  .main-sub-about__content-item {
-    padding: 0 20px;
   }
 
   .main-sub-about__content-image {
