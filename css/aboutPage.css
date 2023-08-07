@@ -1093,7 +1093,7 @@ body {
 .header-bottom__item-call p {
   max-width: 141px;
   width: 100%;
-  color: #8a8a8a;
+  color: #7a7a7a;
   font-family: Montserrat;
   font-size: 12px;
   font-weight: 500;
@@ -2810,6 +2810,12 @@ body {
   width: 100%;
   height: auto;
 }
+@media (max-width: 767.98px) {
+  .news__image img {
+    width: 330px;
+    height: 219px;
+  }
+}
 .news__info {
   padding-left: 25px;
   margin-top: 21px;
@@ -2820,7 +2826,7 @@ body {
   }
 }
 .news__info-data {
-  color: #8a8a8a;
+  color: #7a7a7a;
   font-size: 13px;
   font-weight: 500;
   line-height: 22px;
