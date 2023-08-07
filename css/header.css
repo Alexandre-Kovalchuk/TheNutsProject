@@ -516,7 +516,7 @@
 }
 
 .header-menu__social {
-  width: 100%;
+  width: 90px;
   height: 13px;
 }
 
@@ -662,6 +662,10 @@
 */
 
 @media (max-width: 1024px) {
+  .header-menu__body {
+    padding: 0;
+  }
+
   .header-top__container {
     padding-top: 0px;
   }
