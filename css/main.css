@@ -2081,7 +2081,8 @@ body {
   }
 }
 .slide__wrapper {
-  width: 410px !important;
+  max-width: 410px;
+  width: 100%;
 }
 .slide__swiper {
   max-width: 410px;
