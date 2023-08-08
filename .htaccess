@@ -1,1 +1,53 @@
  ErrorDocument 404 https://github.com/Alexandre-Kovalchuk/TheNutsProject/404.html
+
+ 
+ <!-- Включення кешування: -->
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+</IfModule>
+
+<!-- Включення стиснення: -->
+<IfModule mod_deflate.c>
+   AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</IfModule>
+
+<!-- Відключення ETags: -->
+FileETag None
+
+<!-- Включення кешування для статичних ресурсів: -->
+<IfModule mod_headers.c>
+   <FilesMatch "\.(jpg|jpeg|png|gif|swf|svg)$">
+       Header set Cache-Control "max-age=604800, public"
+   </FilesMatch>
+</IfModule>
+
+<!-- Відключення серверних підписів: -->
+ServerSignature Off
+
+<!-- ідключення директиви "Indexes", яка запобігає автоматичному списку файлів у директоріях: -->
+Options -Indexes
+
+<!-- Відключення доступу до файлу .htaccess: -->
+<Files ".htaccess">
+   Require all denied
+</Files>
+
+<!-- Використання кешування браузера: -->
+<IfModule mod_headers.c>
+   <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+       Header set Cache-Control "max-age=2592000, public"
+   </FilesMatch>
+</IfModule>
+
+<!-- Включення Gzip компресії для текстових ресурсів: -->
+<IfModule mod_deflate.c>
+   AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/javascript text/css application/x-javascript
+</IfModule>
+
+<!-- Відключення серверної підписування: -->
+ServerSignature Off
