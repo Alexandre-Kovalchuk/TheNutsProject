@@ -1690,9 +1690,11 @@ body {
 }
 .contact__content__icon {
   display: inline-block;
-  width: 16px;
-  height: 18px;
   margin-right: 16px;
+}
+.contact__content__icon:nth-child(1) {
+  width: 14px;
+  height: 14px;
 }
 .contact__content-phone {
   margin-top: 67px;
@@ -1752,8 +1754,8 @@ body {
 }
 .contact__content-email img {
   display: inline-block;
-  width: 16px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   margin-right: 14px;
 }
 .contact__content-email a {
@@ -1782,7 +1784,7 @@ body {
 .contact__content-office img {
   display: inline-block;
   width: 16px;
-  height: 18px;
+  height: 16px;
   margin-right: 14px;
 }
 .contact__content-production {
