@@ -659,6 +659,10 @@
 */
 
 @media (max-width: 1024px) {
+  .header-top__lang-list {
+    top: 175%;
+  }
+
   .header-menu__body {
     padding: 0;
   }

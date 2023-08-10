@@ -343,6 +343,11 @@ body._lock {
   height: 13px;
 }
 
+.social img {
+  width: 16px;
+  height: 16px;
+}
+
 .messenger {
   width: 113px;
   display: -webkit-box;
@@ -2167,6 +2172,7 @@ body._lock {
 }
 
 .gallery-banner__images img {
+  min-width: 320px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2236,6 +2242,7 @@ body._lock {
 }
 
 .gallery-images__firstrow-left img {
+  min-width: 320px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2250,6 +2257,7 @@ body._lock {
 }
 
 .gallery-images__firstrow-right img {
+  min-width: 320px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2297,6 +2305,7 @@ body._lock {
 }
 
 .gallery-images__secondrow img {
+  min-width: 320px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2358,6 +2367,7 @@ body._lock {
 .gallery-images__thirdrow-left img,
 .gallery-images__thirdrow-middle img,
 .gallery-images__thirdrow-right img {
+  min-width: 320px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2412,6 +2422,7 @@ body._lock {
 
 .gallery-images__subfirstrow-left img,
 .gallery-images__subfirstrow-right img {
+  min-width: 320px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2510,6 +2521,10 @@ body._lock {
 
   .cont {
     margin-top: 119px;
+  }
+
+  .header-top__lang-list {
+    top: 175%;
   }
 
   .header-menu__body {

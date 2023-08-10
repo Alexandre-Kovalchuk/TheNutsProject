@@ -325,6 +325,11 @@ body._lock {
   height: 13px;
 }
 
+.social img {
+  width: 16px;
+  height: 16px;
+}
+
 .messenger {
   width: 113px;
   display: -webkit-box;
@@ -2206,6 +2211,10 @@ body._lock {
 
   .cont {
     margin-top: 119px;
+  }
+
+  .header-top__lang-list {
+    top: 175%;
   }
 
   .header-menu__body {

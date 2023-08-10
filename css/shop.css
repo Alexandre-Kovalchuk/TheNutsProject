@@ -703,6 +703,11 @@ body._lock {
   height: 13px;
 }
 
+.social img {
+  width: 16px;
+  height: 16px;
+}
+
 .messenger {
   width: 113px;
   display: -webkit-box;
@@ -2966,8 +2971,6 @@ body._lock {
 }
 
 .shop-info__content-text::-webkit-scrollbar-thumb {
-  background-color: transparent;
-  /* Set background-color to transparent */
   background-image: url("../img/svgicons/scroll.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -3079,6 +3082,10 @@ body._lock {
 
   .cont {
     margin-top: 119px;
+  }
+
+  .header-top__lang-list {
+    top: 175%;
   }
 
   .header-menu__body {

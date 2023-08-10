@@ -345,6 +345,11 @@ body._lock {
   height: 13px;
 }
 
+.social img {
+  width: 16px;
+  height: 16px;
+}
+
 .messenger {
   width: 113px;
   display: -webkit-box;
@@ -2486,6 +2491,11 @@ body._lock {
   max-width: 80px;
   width: 100%;
   height: 13px;
+}
+
+.social img {
+  width: 16px;
+  height: 16px;
 }
 
 .messenger {
@@ -4960,6 +4970,11 @@ body._lock {
   max-width: 80px;
   width: 100%;
   height: 13px;
+}
+
+.social img {
+  width: 16px;
+  height: 16px;
 }
 
 .messenger {
@@ -7492,6 +7507,10 @@ input[type=checkbox]:checked + .checkmark::after {
     margin-top: 119px;
   }
 
+  .header-top__lang-list {
+    top: 175%;
+  }
+
   .header-menu__body {
     padding: 0;
   }
@@ -7796,6 +7815,10 @@ input[type=checkbox]:checked + .checkmark::after {
 
   .cont {
     margin-top: 119px;
+  }
+
+  .header-top__lang-list {
+    top: 175%;
   }
 
   .header-menu__body {
@@ -8150,6 +8173,10 @@ input[type=checkbox]:checked + .checkmark::after {
 
   .cont {
     margin-top: 119px;
+  }
+
+  .header-top__lang-list {
+    top: 175%;
   }
 
   .header-menu__body {
