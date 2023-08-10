@@ -685,6 +685,11 @@ body._lock {
   margin-top: 5px;
 }
 
+.popup__row-btn button img {
+  width: 8px;
+  height: 10px;
+}
+
 .popup__row-btn button:first-child {
   margin-right: 7px;
 }
@@ -3591,7 +3596,7 @@ input[type=checkbox]:checked + .checkmark::after {
 
 .basket-contact {
   margin-top: 90px;
-  background: #FBFBFB;
+  background: #fbfbfb;
   margin-bottom: 45px;
 }
 
@@ -3609,10 +3614,17 @@ input[type=checkbox]:checked + .checkmark::after {
   padding: 0px 7px 0 0;
 }
 
+.decrement-button img {
+  width: 8px;
+  height: 10px;
+}
+
 .increment-button {
   display: inline-block;
   background: transparent;
   padding: 0px 0 0 7px;
+  width: 8px;
+  height: 10px;
 }
 
 .contact {
@@ -9593,6 +9605,10 @@ input[type=checkbox]:checked + .checkmark::after {
 
   .basket-account__links-order-item {
     margin-bottom: 30px;
+  }
+
+  .basket-account__links-order-make {
+    margin-left: 0;
   }
 
   .basket-account__info {
