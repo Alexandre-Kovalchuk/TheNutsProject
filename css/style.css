@@ -564,9 +564,10 @@ body._lock {
 }
 
 .table {
-  min-width: 992px;
+  min-width: 600px;
   width: 100%;
   border-collapse: collapse;
+  overflow: auto;
 }
 
 .table__header {
@@ -599,7 +600,7 @@ body._lock {
 }
 
 .table__body-td {
-  color: #1a2f3f;
+  height: 62px;
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
@@ -1111,12 +1112,9 @@ body._lock {
 }
 
 .header-top__lang-arrow.rotate {
-  top: 0px;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
 }
 
 .header-bottom {
@@ -1747,15 +1745,10 @@ body._lock {
   line-height: 17px;
   text-align: center;
   cursor: pointer;
-}
-
-.signup-register__form-tabs-btn.btn-active {
-  color: #1a2f3f;
-  font-weight: 700;
   /* Коли клас title-active додано, використовуйте тут змінені стилі */
 }
 
-.signup-register__form-tabs-btn.btn-active::after {
+.signup-register__form-tabs-btn::after {
   content: "";
   position: absolute;
   max-width: 210px;
@@ -1776,13 +1769,18 @@ body._lock {
   background-color: #337d5a;
 }
 
-.signup-register__form-tabs-btn.btn-active.act-tabs::after {
+.signup-register__form-tabs-btn.act-tabs::after {
   -webkit-transform-origin: bottom left;
       -ms-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.signup-register__form-tabs-btn.act-tabs {
+  color: #1a2f3f;
+  font-weight: 700;
 }
 
 .signup-register__form-tabs-btn:first-child {
@@ -1928,12 +1926,9 @@ body._lock {
 
 .signup-register__form-country-arrow.rotate,
 .signup-register__form-region-arrow.rotate {
-  top: 15px;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
 }
 
 .signup-register__form-region {
@@ -2184,10 +2179,6 @@ input[type=checkbox]:checked + .checkmark::after {
   display: block;
 }
 
-.hide-tabs {
-  display: none;
-}
-
 .office-account {
   margin-top: 179px;
 }
@@ -2289,7 +2280,7 @@ input[type=checkbox]:checked + .checkmark::after {
   margin-bottom: 20px;
 }
 
-.office-account__offer-list {
+.office-account__offer-tabs {
   font-family: Raleway;
   font-size: 16px;
   font-weight: 500;
@@ -2297,32 +2288,16 @@ input[type=checkbox]:checked + .checkmark::after {
   letter-spacing: 0.16px;
 }
 
-.office-account__offer-list li {
+.office-account__offer-tabs li {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
   padding-bottom: 9px;
-}
-
-.office-account__offer-list li a {
-  color: #1a2f3f;
-}
-
-.office-account__offer-list li:last-child {
-  margin-bottom: 32px;
-}
-
-.office-account__offer-list li.list-active {
-  color: #337d5a;
-  position: relative;
   /* Коли клас title-active додано, використовуйте тут змінені стилі */
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
-.office-account__offer-list li.list-active::after {
+.office-account__offer-tabs li::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -2342,13 +2317,29 @@ input[type=checkbox]:checked + .checkmark::after {
   background-color: #337d5a;
 }
 
-.office-account__offer-list li.list-active.list-active::after {
+.office-account__offer-tabs li.list-active::after {
   -webkit-transform-origin: bottom left;
       -ms-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.office-account__offer-tabs li a {
+  color: #1a2f3f;
+}
+
+.office-account__offer-tabs li:last-child {
+  margin-bottom: 32px;
+}
+
+.office-account__offer-tabs li.list-active {
+  color: #337d5a;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .office-account__offer-history {
@@ -6646,6 +6637,10 @@ input[type=checkbox]:checked + .checkmark::after {
 .article-info__description {
   padding-left: 0;
   margin-top: 22px;
+}
+
+.article-banner {
+  margin-top: 80px;
 }
 
 .article-banner__img {
