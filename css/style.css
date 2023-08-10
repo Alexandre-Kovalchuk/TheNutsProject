@@ -3598,13 +3598,14 @@ input[type=checkbox]:checked + .checkmark::after {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  text-align: center;
 }
 
 .card-product__slide-slide picture img {
   display: inline-block;
-  width: 100%;
-  height: auto;
-  margin-top: 75px;
+  width: 153px;
+  height: 431px;
+  margin: 75px auto 0;
 }
 
 .card-product__slide-zoom {
@@ -4005,14 +4006,14 @@ input[type=checkbox]:checked + .checkmark::after {
   background: #fbfbfb;
 }
 
-.btn-active {
+.act-tabs {
   position: relative;
   font-weight: 700;
   color: #1a2f3f;
   /* Коли клас title-active додано, використовуйте тут змінені стилі */
 }
 
-.btn-active::after {
+.act-tabs::after {
   content: "";
   position: absolute;
   max-width: 210px;
@@ -4033,7 +4034,7 @@ input[type=checkbox]:checked + .checkmark::after {
   background-color: #337d5a;
 }
 
-.btn-active.act-tabs::after {
+.act-tabs.act-tabs::after {
   -webkit-transform-origin: bottom left;
       -ms-transform-origin: bottom left;
           transform-origin: bottom left;
